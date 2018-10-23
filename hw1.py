@@ -65,15 +65,18 @@ def h(limit=len(f()),offset=0):
 
 
 
-func = input('Which function would you like to run? (a for g(), b for h())?\n')
+func = input('Which function would you like to run? (a for f(), b for g(), c for h())?\n')
 
-if func == 'a' or func == 'a)' or func == 'g':
+if func == 'a' or func == 'a)' or func == 'f':
+    print(f())
+
+elif func == 'b' or func == 'b)' or func == 'g':
     s = input('What start date would you like to use?\n')
     e = input('What end date would you like to use?\n')
 
     print(g(s,e))
 
-elif func == 'b' or func == 'b)' or func == 'h':
+elif func == 'c' or func == 'c)' or func == 'h':
     l = input('What would you like the limit to be?\n')
     ofs = input('What would you like the offset to be?\n')
 
