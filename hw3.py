@@ -1,8 +1,5 @@
 from flask import Flask, request, jsonify
-import sys
 from hw1.hw1 import f,g,h
-
-#sys.path.insert(0,'Users/bsmith/Desktop/COE332/hw1')
 
 app = Flask(__name__)
 
